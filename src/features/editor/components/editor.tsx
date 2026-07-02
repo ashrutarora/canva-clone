@@ -17,7 +17,6 @@ export const Editor = () => {
                 controlsAboveOverlay: true,
                 preserveObjectStacking: true,
             }
-
         );
 
         init({
@@ -27,8 +26,10 @@ export const Editor = () => {
     }, [init]);
 
     return (
-        <div ref={containerRef}>
-            <canvas ref={canvasRef} />
+        <div className="h-full flex flex-col">
+            <div className="flex-1 h-full bg-muted" ref={containerRef}>
+                <canvas ref={canvasRef} />
+            </div>
         </div>
     );
 }
