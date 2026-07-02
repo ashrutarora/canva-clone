@@ -16,7 +16,7 @@ const Editor = dynamic(
 
 const EditorProjectIdPage = () => {
     return (
-        <div>
+        <div className="h-full">
             <Editor />
         </div>
     );
